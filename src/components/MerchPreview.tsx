@@ -1,4 +1,5 @@
 import type { CSSProperties } from 'react'
+import { asset } from '../asset'
 import type { Product, ProductColor, ProductId } from '../types'
 
 interface MerchPreviewProps {
@@ -83,7 +84,7 @@ export function MerchPreview({
           )}
         </div>
         <div className="merch-preview__brand">
-          <img src="/logo-skull.png" alt="" width={48} height={48} />
+          <img src={asset('logo-skull.png')} alt="" width={48} height={48} />
         </div>
       </div>
     </div>

@@ -1,3 +1,5 @@
+import { asset } from '../asset'
+
 interface BrandMarkProps {
   className?: string
   size?: 'sm' | 'md' | 'lg' | 'hero'
@@ -20,7 +22,7 @@ export function BrandMark({
     <span className={`brand-mark ${SIZE_CLASS[size]} ${className}`}>
       <img
         className="brand-mark__logo"
-        src="/logo-skull.png"
+        src={asset('logo-skull.png')}
         alt={withWordmark ? '' : 'ZOMBI shop'}
         width={512}
         height={512}

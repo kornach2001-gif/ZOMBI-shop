@@ -1,10 +1,11 @@
 import { useId, useMemo, useState, type FormEvent } from 'react'
+import { asset } from '../asset'
 import { PRODUCTS, SIZES, formatPrice } from '../data/products'
 import type { Order, ProductId, Size } from '../types'
 
 const ORDER_PHOTOS = [
-  { src: '/products/tee-1.png', alt: 'Футболка ZOMBI — вид спереди' },
-  { src: '/products/tee-2.png', alt: 'Футболка ZOMBI — принт и детали' },
+  { src: asset('products/tee-1.png'), alt: 'Футболка ZOMBI — вид спереди' },
+  { src: asset('products/tee-2.png'), alt: 'Футболка ZOMBI — принт и детали' },
 ] as const
 
 interface OrderPanelProps {

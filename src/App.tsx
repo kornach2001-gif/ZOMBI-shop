@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { asset } from './asset'
 import { BrandMark } from './components/BrandMark'
 import { Catalog } from './components/Catalog'
 import { OrderPanel } from './components/OrderPanel'
@@ -55,7 +56,7 @@ export default function App() {
           <div className="hero__stage">
             <img
               className="hero__photo"
-              src="/hero.jpg"
+              src={asset('hero.jpg')}
               alt="Команда ZOMBI на сцене"
               width={1600}
               height={827}
@@ -67,7 +68,7 @@ export default function App() {
           <div className="hero__banner">
             <img
               className="hero__banner-img"
-              src="/hero-banner.png"
+              src={asset('hero-banner.png')}
               alt="ZOMBI"
               width={1024}
               height={576}
